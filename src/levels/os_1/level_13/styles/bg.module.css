@@ -1,0 +1,13 @@
+.background_custom {
+    background-size: cover;
+    background-color: #000;
+}
+
+.game_custom {
+    font-style: normal;
+}
+
+.board_custom {
+    font-style: normal;
+    gap: .4rem;
+}

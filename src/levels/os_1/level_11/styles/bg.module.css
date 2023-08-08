@@ -1,0 +1,16 @@
+.background_custom {
+    background-color: hsl(122, 20%, 30%); 
+    background-image: url('../resources/background.svg');
+    background-size: cover;
+}
+
+.game_custom {
+    font-size: 1rem;
+    padding: .3em;
+    box-sizing: border-box; 
+}
+
+.board_custom {
+    font-size: 1rem;
+    padding: 3em 3em;
+}

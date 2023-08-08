@@ -1,0 +1,35 @@
+.secondPlan_custom {
+    box-sizing: border-box; /* We can use second plan field styling the way that it fits a given level best */
+}
+
+.animationBox {
+    position: absolute;
+    width: min(10vh, 10vw);
+    height: min(10vh, 10vw);
+    border-radius: 10%;
+    box-shadow:  0rem 0rem .12rem #ddd;
+}
+
+.animationBoxInner {
+    position: absolute;
+    width: min(10vh, 10vw);
+    height: min(10vh, 10vw);
+    border-radius: 10%;
+    box-shadow:  0rem 0rem .12rem #ddd;
+}
+
+.animationBox-1 {
+    top: calc(0% + (min(10vh, 10vw)/2)); left: calc(0% + (min(10vh, 10vw)/2));
+}
+
+.animationBoxInner-1 {
+    top: calc(0% + min(10vh, 10vw)); left: calc(0% + min(10vh, 10vw));
+}
+
+.animationBox-2 {
+    bottom: calc(0% + (min(10vh, 10vw)/2)); right: calc(0% + (min(10vh, 10vw)/2));
+}
+
+.animationBoxInner-2 {
+    bottom: calc(0% + min(10vh, 10vw) ); right: calc(0% + min(10vh, 10vw));
+}

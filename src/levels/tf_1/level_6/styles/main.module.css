@@ -1,0 +1,58 @@
+/* body {
+    overflow: hidden;  // THIS IS EXCEPTIONAL ONLY FOR THIS LEVEL - IT PREVENTS FROM SCROLLBAR APPEARING WHEN BOARD IS CONSTANTLY ROTATING
+} */
+
+.fa-icon_custom {
+    color: hsla(282, 80%, 40%, 0.8);
+    font-size: 1.2rem;
+}
+
+.tile_custom {
+    border-radius: 20%;
+    margin: 0.1rem;
+    border: 0.3rem solid hsla(282, 80%, 40%, 0.15);
+    box-shadow: .1rem .1rem 1rem .6rem #1119;
+    background-image: radial-gradient(hsl(52, 80%, 60%) 20%, hsl(29, 80%, 60%) 45%, hsl(282, 80%, 40%));
+}
+
+.tile-back_custom {
+    color: hsl(51, 94%, 53%);
+    box-shadow: .1rem .1rem 1rem .6rem #3335;
+}
+
+.gd-level_custom::after, .gd-turns_custom::after, .gd-time_custom::after, .gd-score_custom::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0.4vh;
+    box-shadow: .1rem .1rem .25rem #222;
+}
+
+.gd-level_custom::after {
+    background: hsl(52, 66%, 52%);
+}
+
+.gd-turns_custom::after, .gd-time_custom::after {
+    background: hsl(29, 66%, 52%);
+}
+
+.gd-score_custom::after {
+    background: hsl(282, 66%, 52%);
+}
+
+.gd-level_custom, .gd-turns_custom, .gd-time_custom, .gd-score_custom {
+    font-weight: 600;
+    text-shadow: .1rem .1rem .25rem #222;
+}
+
+.gd-level_custom {
+    color: hsl(52, 66%, 52%);
+}
+
+.gd-turns_custom, .gd-time_custom {
+    color: hsl(29, 66%, 52%);
+}
+
+.gd-score_custom {
+    color: hsl(282, 66%, 52%);
+}

@@ -1,0 +1,103 @@
+.error-main {
+    background: #000;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.error-bg {
+    margin: 0 auto;
+    width: 100%;
+    min-height: 100vh;
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: inset 0 0 .4rem .4rem #222;
+}
+
+.error-icon {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    color: #2227;
+    height: 100vh;
+    width: 100%;
+}
+
+.icon-user-error {
+    font-size: min(90vh, 90vw);
+    border-radius: 50%;
+}
+
+.error-content-box {
+    font-size: 1.5rem;
+    font-weight: 650;
+    z-index: 10;
+    max-width: 60%;
+    color: #555;
+    text-align: center;
+}
+
+.error-title {
+    font-size: 4rem;
+    letter-spacing: .05em;
+    font-weight: 600;
+    color: #555;
+    text-shadow: .15rem .15rem .3rem #ddd;
+    -webkit-text-stroke: .075rem #ccc;
+    margin-top: 0;
+}
+
+.error-message {
+    font-size: 1.3rem;
+}
+
+.error-return-block {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin: 3.5em auto 2.5em auto;
+    padding: 1em;
+    max-width: 40%;
+    border-radius: 777px;
+    background: #333;
+    box-shadow: inset 0 0 .4em .2em #222, 0 0 .4em .2em #111;
+
+    transition-duration: 2s;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    transition: all 2s ease;
+}
+
+.error-return-block:hover {
+    filter: invert(100%) brightness(70%);
+    color: #222;
+    text-shadow: .1rem .1rem .15rem white;
+    cursor: pointer;
+}
+
+.error-return-text {
+    font-size: 1.45rem;
+    letter-spacing: .05em;
+    font-weight:  700;
+    color: #888;
+}
+
+/* Only for client-side errors */
+
+.error-stack-box {
+    font-size: 1rem;
+    margin-top: 2em;
+}
+
+.error-stack-text {
+    font-size: 1.1rem;
+    color: #bbb;
+    -webkit-text-stroke: .08em #1115;
+    text-shadow: .075em .075em .3em #999;
+    max-width: 60%;
+}

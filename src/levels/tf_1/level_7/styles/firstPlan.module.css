@@ -1,0 +1,114 @@
+.firstPlan_custom {
+    box-sizing: border-box; /* We can use second plan field styling the way that it fits a given level best */
+}
+
+.match-info-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 0%;
+    border-radius: 25%;
+}
+
+.mic-1 {
+    left: 0%;
+}
+
+.mic-2 {
+    right: 0%;
+}
+
+.match-info-title {
+    font-size: 1.4rem;
+    color: hsl(52, 66%, 62%);
+    text-shadow: .1rem .1rem .45rem #111;
+    font-weight: 750;
+    display: inline-block;
+    text-align: center;
+    margin: 0 2em;
+}
+
+.mit-1 {
+    font-style: normal;
+}
+
+.mit-2 {
+    font-style: normal;
+}
+
+.match-info-box {
+    font-size: 1.2rem;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 70% 30%;
+    row-gap: .5em;
+    width: 3.5em;
+    height: 3.5em;
+    padding: 1em;
+    margin: 2em;
+    margin-top: .5em;
+    border: 0.2rem dashed #222;
+    background: #222;
+    box-shadow:  0 0 .2em .1em #555;
+}
+
+.mib-1 {
+    left: 0%;
+}
+
+.mib-2 {
+    right: 0%;
+}
+
+.match-info-icon {
+    font-style: normal;
+    background-size: cover; /* "contain" does not allow the image to be centered within the parent box*/
+    background-repeat: no-repeat;
+}
+
+.match-info-icon[data-match_type="colors_type"] {
+    background-image: url('../resources/match_mode_colors.svg');
+}
+
+.match-info-icon[data-match_type="icons_type"] {
+    background-image: url('../resources/match_mode_icons.svg');
+}
+
+.mii-1 {
+    font-style: normal;
+}
+
+.mii-2 {
+    font-style: normal;
+}
+
+.match-info-description {
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: .9rem;
+    letter-spacing: .125rem;
+    font-size: 800;
+    color:hsl(52, 66%, 62%);
+    text-shadow: .1rem .1rem .25rem #111;
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.mid-1 {
+    font-style: normal;
+}
+
+.mid-2 {
+    font-style: normal;
+}
+
+.unselectable {
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}

@@ -1,0 +1,84 @@
+:root {
+  --lightness: 50%;
+  --A: hsl(0, 100%, 50%);
+      --A1: hsl(10, 100%, 50%);
+      --A2: hsl(15, 100%, 50%);
+      --A3: hsl(20, 100%, 50%);
+  --B: hsl(30, 100%, 50%);
+      --B1: hsl(40, 100%, 50%);
+      --B2: hsl(45, 100%, 50%);
+      --B3: hsl(50, 100%, 50%);
+  --C: hsl(60, 100%, 50%);
+      --C1: hsl(75, 100%, 50%);
+      --C2: hsl(90, 100%, 50%);
+      --C3: hsl(105, 100%, 50%);
+  --D: hsl(120, 100%, 50%);
+      --D1: hsl(150, 100%, 50%);
+      --D2: hsl(180, 100%, 50%);
+      --D3: hsl(210, 100%, 50%);
+  --E: hsl(240, 100%, 50%);
+      --E1: hsl(250, 100%, 50%);
+      --E2: hsl(260, 100%, 50%);
+      --E3: hsl(270, 100%, 50%);
+  --F: hsl(275, 100%, 25%);
+  --G: hsl(280, 100%, 50%);
+      --G1: hsl(295, 100%, 50%);
+      --G2: hsl(310, 100%, 50%);
+      --G3: hsl(325, 100%, 50%);
+
+  /* BASIC COLORS:  6 */
+  /* ALTERNATIVES: 18 */
+  /* TOTAL COLORS: 24 */
+
+  --color-hue: 75%;
+  --color-lightness: 44%;
+  --color-opacity_main: .58;
+  --color-opacity_sec: .68;
+
+  --color_easy_main: hsla(123, var(--color-hue), var(--color-lightness), var(--color-opacity_main) );
+  --color_easy_sec:  hsla(144, var(--color-hue), var(--color-lightness), var(--color-opacity_sec) );
+
+  --color_medium_main: hsla(76, var(--color-hue), var(--color-lightness), var(--color-opacity_main) );
+  --color_medium_sec: hsla(51, var(--color-hue), var(--color-lightness), var(--color-opacity_sec) );
+
+  --color_hard_main: hsla(4, var(--color-hue), var(--color-lightness), var(--color-opacity_main) );
+  --color_hard_sec: hsla(350, var(--color-hue), var(--color-lightness), var(--color-opacity_sec) );
+
+  --color_insane_main: hsla(202, var(--color-hue), var(--color-lightness), var(--color-opacity_main) );
+  --color_insane_sec: hsla(231, var(--color-hue), var(--color-lightness), var(--color-opacity_sec) );
+
+  --color_extreme_main: hsla(292, var(--color-hue), var(--color-lightness), var(--color-opacity_main) );
+  --color_extreme_sec: hsla(262, var(--color-hue), var(--color-lightness), var(--color-opacity_sec) );
+
+  --color_legend_main: hsla(35, var(--color-hue), var(--color-lightness), var(--color-opacity_main) );
+  --color_legend_sec: hsla(13, var(--color-hue), var(--color-lightness), var(--color-opacity_sec) );
+
+  --border-color_easy: var(--color_easy_sec);
+  --border-color_medium: var(--color_medium_sec);
+  --border-color_hard: var(--color_hard_sec);
+  --border-color_insane: var(--color_insane_sec);
+  --border-color_extreme: var(--color_extreme_sec);
+  --border-color_legend: var(--color_legend_sec);
+
+  --playIcon-color_easy: var(--color_easy_sec);
+  --playIcon-color_medium: var(--color_medium_sec);
+  --playIcon-color_hard: var(--color_hard_sec);
+  --playIcon-color_insane: var(--color_insane_sec);
+  --playIcon-color_extreme: var(--color_extreme_sec);
+  --playIcon-color_legend: var(--color_legend_sec);
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #000;box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

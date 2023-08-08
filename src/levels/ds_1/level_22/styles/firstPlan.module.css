@@ -1,0 +1,20 @@
+.firstPlan_custom {
+    box-sizing: border-box; /* We can use second plan field styling the way that it fits a given level best */
+}
+
+.finishWall {
+    position: absolute;
+    top: 0;
+    min-height: 100vh;
+    width: 0%;
+}
+
+.fw-left {
+    left: 0;
+    background-image: linear-gradient(90deg, #000, #0000);
+}
+
+.fw-right {
+    right: 0;
+    background-image: linear-gradient(90deg, #0000, #000);
+}

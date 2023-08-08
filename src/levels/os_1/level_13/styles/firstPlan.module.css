@@ -1,0 +1,46 @@
+.firstPlan_custom {
+    box-sizing: border-box; /* We can use second plan field styling the way that it fits a given level best */
+}
+
+.substract {
+    position: absolute;
+    top: 10%;
+    left: 48%; /* 48% + (width / 2) === 50%, so it's centered */
+    width: 4%;
+    height: 3rem;
+    font-size: 2.5rem;
+    color: hsl(0, 63%, 48%);
+}
+
+.boardbox, .bbox {
+    position:absolute;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    padding: -2.5rem -2.5rem;
+    margin: 2rem;
+    z-index: -60;
+    border-radius: 20%;
+}
+
+.strip {
+    position: absolute;
+    display: block;
+    z-index: -40;
+    height: 100%;
+    width: 8%;
+    background: hsl(118, 50%, 50%);
+    padding: .1rem;
+    border-radius: 20%;
+}
+
+.strip:nth-child(1) {
+    margin-left:  2rem;
+    border-radius: 10%;
+}
+
+.strip:nth-last-child(1) {
+    margin-right:  50%;
+    border-radius: 10%;
+    width: 4%;
+}

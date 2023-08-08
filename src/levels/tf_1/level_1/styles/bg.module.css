@@ -1,0 +1,11 @@
+.background_custom {
+    background-image: linear-gradient(135deg, hsl(0, 0%, 20%), hsl(0, 63%, 48%), hsl(0, 66%, 32%), hsl(0, 63%, 48%), hsl(0, 0%, 20%));
+}
+
+.game_custom {
+    box-sizing: border-box; /* We can use game panel styling the way that it fits a given level best */
+}
+
+.board_custom {
+    box-sizing: border-box; /* We can use game board styling the way that it fits a given level best */
+}

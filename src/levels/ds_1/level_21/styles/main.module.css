@@ -1,0 +1,219 @@
+.aContainer_custom {
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+.fa-icon_custom {
+    font-size: 1.65rem;
+    color: inherit;
+    border: .1rem solid inherit;
+    color: hsl(36, 80%, 90%);
+}
+
+.tile_custom { 
+    background-image: url('../resources/icons_skin.svg');
+    background-size: cover;
+    border: 0rem solid #fff;
+    outline: 0rem solid transparent;
+    border-style: double;
+    margin: .475rem;
+    position: relative;
+}
+
+.tile-front_custom {
+    font-size: 1rem;
+    position: absolute;
+    box-sizing: border-box;
+    top: calc(50% - .6em);
+    left: calc(50% - .6em);
+    border-radius: 0%;
+    transform: rotate(45deg);
+    box-shadow: inset 0 0 .1rem .6rem #2224;
+    border: .15em double #bbb;
+    width: 1.2em;
+    height: 1.2em;
+    pointer-events: none !important;
+    opacity: 0; /* WILL BE ANIMATED BACK TO 1 */
+} 
+
+.tile-back_custom {
+    position: relative;
+    color:black;
+    border: 0rem solid #fff;
+    background-size: cover;
+    background-clip: content-box;
+    background-image: url('../resources/icons_skin.svg');
+    filter: saturate(105%) brightness(110%);
+    background-color: #0000; /* completely transparent, this is Essential here ! */
+}
+
+.tile-back_custom::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    top: calc(50% - 1.65rem / 2);
+    left: calc(50% - 1.65rem / 2);
+    width: 1.65rem;
+    height: 1.65rem;
+    z-index: -50;
+}
+
+.gd-level_custom, .gd-turns_custom, .gd-time_custom, .gd-score_custom {
+    background: -webkit-linear-gradient(125deg, hsl(95, 60%, 50%), hsl(155, 60%, 70%));
+    filter: contrast(85%); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    text-shadow: .1rem .1rem .9rem lightgreen;
+}
+
+/* Apply extra styling for even tiles*/
+
+.tile-color-2, .tile-color-2 .tile-back_custom {
+    background-image: url('../resources/icons_skin-2.svg');
+}
+
+.tile-back--glow-1::before {
+    box-shadow: 0 0 4em 1em hsl(151, 60%, 50%);
+}
+
+.tile-back--glow-2::before {
+    box-shadow: 0 0 4em 1em hsl(121, 60%, 50%);
+}
+
+/* Finally, decrease numbers when non-match occurs */
+
+.turn-decrease-box {
+    position: absolute;
+    font-size: 1.65rem;
+    font-weight: 800;
+    color: white;
+    text-shadow: .1rem .1rem .5rem lightgreen;
+    width: 1em;
+    pointer-events: none;
+}
+
+.message-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    gap: 0rem;
+    box-shadow: inset 0 0 1.5em  lightgreen;
+    opacity: 0; /* Will be animated back to 1, and then to 0 again */
+}
+
+.message-text-1, .message-text-2 {    
+    font-size: 2rem;
+    background: none;
+    color: hsl(151, 60%, 50%);
+    text-shadow: .1em .1em #444;
+    -webkit-text-stroke: .05em darkgreen;
+    font-weight: 650;
+    max-width: 60%;
+    text-align: center;
+    letter-spacing: .1em;
+    opacity: 0; /* Will be animated back to 1, and then to 0 again */
+}
+
+.dark-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    width: 100%;
+    box-shadow: inset 0 0 .6em .3em #010, inset 0 0 2em 1em  darkgreen, inset 0 0 3em 1.5em green;
+}
+
+/* STAGE-1 (second in order) - CSS order is strict here ! */
+
+.tile-back_custom--stage-1 {
+    position: relative;
+}
+
+.tile-back_custom--stage-1::before {
+    content: '';
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: radial-gradient(#222, #0000);
+}
+
+.tile_custom--stage-1, .tile-back_custom--stage-1 {
+    background-image: url('../resources/icons_radiation-1.svg');
+    background-position: center;
+    background-color: hsl(55, 50%, 55%);
+    border-radius: 50%;
+    box-shadow: 0 0 .4rem .3rem #111;
+}
+
+.tile_custom--stage-1 {
+    box-shadow: 0 0 .4rem .3rem #111;
+}
+
+.tile_custom--stage-1.radial-color-2, .tile_custom--stage-1.radial-color-2 .tile-back_custom--stage-1 {
+    background-image: url('../resources/icons_radiation-2.svg');
+    background-position: center;
+    background-color: #111;
+    box-shadow: 0 0 .4rem .3rem hsl(55, 50%, 55%);
+    border-radius: 50%;
+}
+
+.tile-front_custom--stage-1 {
+    opacity: 0;
+}
+
+.tile_custom--stage-0, .tile_custom--stage-1 {
+    font-style: normal;
+}
+
+.tile-back--radial-glow-1 {
+    box-shadow: 0 0 2em 1em hsl(55, 50%, 55%) !important;
+}
+
+.tile-back--radial-glow-2 {
+    box-shadow: 0 0 2em 1em #111 !important;
+}
+
+.fa-icon_custom--stage-1 {
+    font-size: 2rem;
+    color: antiquewhite;
+}
+
+/* END GAME SCREEN */
+
+.end-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    min-height: 100vh;
+    width: 100%;
+    background: #111;
+    opacity: 0; /* Will be animated back to 1 */
+}
+
+.end-screen {
+    max-height: 100vh;
+    width: 100%;
+    background: url('../resources/win_screen.svg');
+    background-repeat: no-repeat;
+    background-color: lightslategray;
+    aspect-ratio: 16 / 9;
+    background-size: auto;
+    background-size: cover;
+    opacity: 0; /* Will be animated back to 1 */
+}

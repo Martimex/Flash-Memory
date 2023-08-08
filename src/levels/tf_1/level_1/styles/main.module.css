@@ -1,0 +1,43 @@
+.aContainer_custom {
+    box-sizing: border-box; /* We can use game animation container styling the way that it fits a given level best */
+}
+
+.tile_custom { /* Front size of card */
+    border: 0.2rem solid hsl(4, 87%, 62%);
+    background: hsl(4, 66%, 56%);
+    margin: 0.5rem;
+    border-radius: 10%;
+}
+
+.tile-front_custom { /* Have no clue what this class is for */
+    background: hsl(4, 87%, 62%);
+}
+
+.tile-back_custom { /* Back side of card */
+    background: hsl(4, 87%, 62%);
+}
+
+.fa-icon_custom {
+    color: hsl(4, 87%, 95%);
+    font-size: 1.4rem;
+}
+
+.gd-level_custom::after, .gd-turns_custom::after, .gd-time_custom::after, .gd-score_custom::after {
+    content: "";
+    display: block;
+    width: 100%;
+    margin: 0.2rem 0.8rem;
+    border: solid 0.1rem hsl(4, 87%, 62%);
+}
+
+.gd-level_custom {
+    color: hsl(4, 87%, 84%);
+}
+
+.gd-turns_custom, .gd-time_custom {
+    color: hsl(4, 87%, 84%);
+}
+
+.gd-score_custom {
+    color: hsl(4, 87%, 84%);
+}

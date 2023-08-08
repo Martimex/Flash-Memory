@@ -1,0 +1,13 @@
+.background_custom {
+    background-image: unset;
+    background: #111;
+}
+
+.game_custom {
+    box-sizing: border-box; 
+}
+
+.board_custom {
+    box-sizing: border-box;
+    gap: 0.3rem;
+}

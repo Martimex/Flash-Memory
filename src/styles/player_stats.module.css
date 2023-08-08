@@ -1,0 +1,144 @@
+.stats-table {
+    font-size: 1rem;
+    display: flex;
+    flex-flow: column;
+}
+
+.stats-item {
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 1fr;
+    width: 100%;
+    margin: .2em;
+}
+
+.stats-item-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.item-box__text {
+    font-size: 1rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+.item-box__bar--outer {
+    font-size: 1rem;
+    box-sizing: border-box;
+    background: none;
+    width: 100%;
+    height: 100%;
+    border: .1rem solid #444;
+    border-radius: 777px;
+    position: relative;
+}
+
+.item-box__bar--inner {
+    position: relative;
+    width: 100%; /* WE ARE GOING TO MODIFY THIS VALUE INDIVIDUALLY BASED ON USER STATS */
+    max-width: 100%;
+    border-radius: 777px;
+    height: 100%;
+}
+
+/* ADD SOME FANCY BARS COLOR COMBINATIONS */
+
+.item-box__bar--inner.bar--exp {
+    background: linear-gradient(0deg, hsla(125, 55%, 15%, .8), hsla(125, 60%, 65%, .8));
+}
+
+.item-box__bar--inner.bar--stars {
+    background: linear-gradient(0deg, hsla(45, 55%, 15%, .8), hsla(45, 60%, 65%, .8));
+}
+
+.item-box__bar--inner.bar--levels {
+    background: linear-gradient(0deg, hsla(175, 55%, 15%, .8), hsla(175, 60%, 65%, .8));
+}
+
+.item-box__bar--inner.bar--easy {
+    background: linear-gradient(0deg,hsla(99, 55%, 50%, .8) 30%, hsla(125, 60%, 65%, .8));
+}
+
+.item-box__bar--inner.bar--medium {
+    background: linear-gradient(0deg,hsla(45, 55%, 50%, .8) 30%, hsla(63, 60%, 65%, .8));
+}
+
+.item-box__bar--inner.bar--hard {
+    background: linear-gradient(0deg,hsla(1, 55%, 50%, .8) 30%, hsla(12, 60%, 65%, .8));
+}
+
+.item-box__bar--inner.bar--insane {
+    background: linear-gradient(0deg,hsla(180, 55%, 50%, .8) 30%, hsla(214, 60%, 65%, .8));
+}
+
+.item-box__bar--inner.bar--extreme {
+    background: linear-gradient(0deg, hsla(277, 55%, 50%, .8) 30%, hsla(300, 60%, 65%, .8));
+}
+
+.item-box__bar--inner.bar--legend {
+    background: linear-gradient(0deg, hsla(23, 55%, 50%, .8) 30%, hsla(38, 60%, 65%, .8));
+}
+
+
+.item-box__bar-text {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    color: #eee;
+    font-weight: 600;
+}
+
+.box__user-stats {
+    display: grid;
+    grid-template-columns: 12% 76% 12%;
+    grid-template-rows: 1fr;
+}
+
+.user-stats__switch-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.switch-btn-left, .switch-btn-right {
+    font-size: 5.2rem;
+    color: #ddd;
+}
+
+.user-stats__stats-table {
+    font-size: 1rem;
+    padding: 1.4em;
+    display: flex;
+    flex-flow: column;
+    background: #333;
+    background: linear-gradient(135deg, #3335, #222);
+    border-radius: 5%;
+    box-shadow: inset .08em .08em .08em .15em #444, .03em .03em .1em .25em #333;
+}
+
+.user-stats__stats-title-box {
+    font-size: 1rem;
+}
+
+.user-stats__stats-title{
+    font-size: 1.05rem;
+    text-align: center;
+    vertical-align: center;
+    padding: 0;
+    margin: 0;
+    font-weight: 550;
+    margin-bottom: .6em;
+    letter-spacing: .075em;
+}
+
+.icon-arrow:hover {
+    cursor: pointer;
+}

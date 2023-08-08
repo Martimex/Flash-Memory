@@ -1,0 +1,36 @@
+.firstPlan_custom {
+    box-sizing: border-box; /* We can use first plan field styling the way that it fits a given level best */
+}
+
+.lightning {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+
+.lightning::before {
+    content: "";
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    box-shadow: 0rem -1.1rem 1rem hsl(14, 50%, 75%);
+    background-color: hsla(14, 50%, 75%, 0.25);
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0.5rem;
+}
+
+.lightning::after {
+    content: "";
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    box-shadow: 0rem -1.1rem 1rem hsl(14, 50%, 75%);
+    background-color: hsla(14, 50%, 75%, 0.25);
+    position: absolute;
+    bottom: 0.5rem;
+    left: 1.5rem;
+}

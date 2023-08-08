@@ -1,0 +1,86 @@
+.aContainer_custom {
+    box-sizing: border-box; /* We can use game animation container styling the way that it fits a given level best */
+}
+
+.fa-icon_custom {
+    color: rgba(116, 211, 255, 0.43);
+    font-size: 1.5rem;
+}
+
+.tile_custom {
+    border: 0.07rem solid hsla(199, 100%, 73%, 0.7);
+    background-image: radial-gradient(hsl(212, 40%, 30%), hsl(232, 40%, 30%));
+    border-radius: 10%;
+
+}
+
+.tile_custom::after, .tile_custom::before, .dark-bubble::after, .dark-bubble::before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    bottom: -50%;
+    right: -10%;
+    padding: 0.5rem;
+    border-radius: 50%;
+    border: 0.1rem dashed hsla(199, 100%, 73%, 0.4);
+}
+
+.tile_custom::before, .dark-bubble::before {
+    bottom: 50%;
+    right: 10%;
+}
+
+.tile_custom::after, .tile_custom::before {
+    animation: spin 2s infinite alternate ease-in;
+}
+
+.dark-bubble::before, .dark-bubble::after {
+    animation: spinQuick 1.2s infinite alternate ease-out;
+}
+
+.dark-bubble::after, .dark-bubble::before {
+    border: 0.15rem dotted hsla(232, 40%, 30%, 0.9);
+    filter: saturate(140%) brightness(140%);
+}
+
+.gd-level_custom, .gd-turns_custom, .gd-time_custom, .gd-score_custom  {
+    color: hsla(199, 80%, 73%, 0.8);
+}
+
+.gd-level_custom::after, .gd-turns_custom::after, .gd-time_custom::after,  .gd-score_custom::after {
+    content: "";
+    display: block;
+    width: 90%;
+    border: hsla(199, 100%, 73%, 0.4) solid 0.15rem;
+    transform: rotate(-3deg);
+    height: 0.1rem;
+    background: hsla(232, 40%, 30%, 0.6);
+}
+
+@keyframes spin {
+    0% {
+        rotate: 0deg;
+        scale: 1;
+    }
+    50% {
+        scale: 1.4;
+    }
+    100% {
+        rotate: 360deg;
+        scale: 1;
+    }
+}
+
+@keyframes spinQuick {
+    0% {
+        rotate: 0deg;
+        scale: 1;
+    }
+    50% {
+        scale: 1.6;
+    }
+    100% {
+        rotate: -360deg;
+        scale: 1;
+    }
+}

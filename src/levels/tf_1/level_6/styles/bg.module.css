@@ -1,0 +1,13 @@
+.background_custom {
+    background-image: linear-gradient(132deg, hsl(52, 80%, 60%), hsl(282, 80%, 40%));
+}
+
+.game_custom {
+    box-sizing: border-box; 
+}
+
+.board_custom {
+    box-sizing: border-box;
+    border-radius: 10%;
+    gap: 0.16rem;
+}

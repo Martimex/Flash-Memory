@@ -1,0 +1,108 @@
+.firstPlan_custom {
+    box-sizing: border-box; /* We can use second plan field styling the way that it fits a given level best */
+}
+
+.dot-g {
+    width: 1.5rem;
+    position: absolute;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+
+.dot-invisible {
+    opacity: 0;
+}
+
+.dot-g::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -0.75rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+
+.version--green--invis {
+    animation: grow 12s linear infinite;
+    background: hsl(122, 80%, 50%);
+    box-shadow: 0 0 1.5rem hsl(122, 80%, 50%), 0 0 3rem hsl(122, 80%, 50%), 0 0 3rem hsl(88, 80%, 50%), 0 0 4rem hsl(88, 80%, 50%), 0 0 0 0.25rem hsla(88, 100%, 50%, 0.1);
+}
+
+.version--blue--invis {
+    animation: grow 10s linear infinite;
+    background: hsl(233, 80%, 50%);
+    box-shadow: 0 0 1.5rem hsl(233, 80%, 50%), 0 0 3rem hsl(233, 80%, 50%), 0 0 3rem hsl(177, 80%, 50%), 0 0 4rem hsl(177, 80%, 50%), 0 0 0 0.25rem hsla(177, 80%, 50%, 0.1);
+}
+
+.version--yellow--invis {
+    animation: grow 6s linear infinite;
+    background: hsl(5, 80%, 50%);
+    box-shadow: 0 0 1.5rem hsl(5, 80%, 50%), 0 0 3rem hsl(5, 80%, 50%), 0 0 3rem hsl(55, 80%, 50%), 0 0 4rem hsl(55, 80%, 50%), 0 0 0 0.25rem hsla(55, 80%, 50%, 0.1);
+}
+
+.version--violet--invis {
+    animation: grow 8s linear infinite;
+    background: hsl(311, 80%, 50%);
+    box-shadow: 0 0 1.5rem hsl(311, 80%, 50%), 0 0 3rem hsl(311, 80%, 50%), 0 0 3rem hsl(266, 80%, 50%), 0 0 4rem hsl(266, 80%, 50%), 0 0 0 0.25rem hsla(266, 80%, 50%, 0.1);
+}
+
+.version--green {
+    animation: cycle 12s linear infinite;
+    background: hsl(88, 80%, 50%);
+    box-shadow: 0 0 1.5rem hsl(88, 80%, 50%), 0 0 3rem hsl(88, 80%, 50%), 0 0 3rem hsl(88, 80%, 50%), 0 0 4rem hsl(88, 80%, 50%), 0 0 0 0.25rem hsla(88, 100%, 50%, 0.1);
+}
+
+.version--blue {
+    animation: cycle 10s linear infinite;
+    background: hsl(177, 80%, 50%);
+    box-shadow: 0 0 1.5rem hsl(177, 80%, 50%), 0 0 3rem hsl(177, 80%, 50%), 0 0 3rem hsl(177, 80%, 50%), 0 0 4rem hsl(177, 80%, 50%), 0 0 0 0.25rem hsla(177, 80%, 50%, 0.1);
+}
+
+.version--yellow {
+    animation: cycle 6s linear infinite;
+    background: hsl(55, 80%, 50%);
+    box-shadow: 0 0 1.5rem hsl(55, 80%, 50%), 0 0 3rem hsl(55, 80%, 50%), 0 0 3rem hsl(55, 80%, 50%), 0 0 4rem hsl(55, 80%, 50%), 0 0 0 0.25rem hsla(55, 80%, 50%, 0.1);
+}
+
+.version--violet {
+    animation: cycle 8s linear infinite;
+    background: hsl(266, 80%, 50%);
+    box-shadow: 0 0 1.5rem hsl(266, 80%, 50%), 0 0 3rem hsl(266, 80%, 50%), 0 0 3rem hsl(266, 80%, 50%), 0 0 4rem hsl(266, 80%, 50%), 0 0 0 0.25rem hsla(266, 80%, 50%, 0.1);
+}
+
+@keyframes grow {
+    0% {
+        filter: hue-rotate(0deg);
+        transform: rotate(0deg);
+        scale: 1;
+    }
+    50% {
+        scale: 1.75;
+        transform: rotate(90deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+        transform: rotate(360deg);
+        scale: 1;
+    }
+}
+
+@keyframes cycle {
+    0% {
+        filter: hue-rotate(0deg);
+        transform: rotate(0deg);
+        scale: 1;
+        transform: translateX(0rem);
+    }
+    50% {
+        scale: 1.3;
+        opacity: 0.2;
+    }
+    100% {
+        filter: hue-rotate(360deg);
+        transform: rotate(360deg);
+        scale: 1;
+        transform: translateX(0rem);
+    }
+}

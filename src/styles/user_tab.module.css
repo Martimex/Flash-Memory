@@ -1,0 +1,228 @@
+.main-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    background: #0007;
+    backdrop-filter: blur(3px);
+    z-index: 10;
+}
+
+.user-tab {
+    position: absolute;
+    min-height: 100vh;
+    height: 100%;
+    top: 0;
+    left: 40%;
+    width: 60%;
+    z-index: 200;
+    pointer-events: none;
+}
+
+    .user-tab__box {
+        font-size: 1rem;
+        position: sticky;
+        top: 0;
+        background: #222;
+        color: #ddd;
+        padding: 2em 0;
+        display: grid;
+        grid-template-columns: 80% 20%;
+        grid-template-rows: 1fr;
+        border-radius: 0 0 0 3%;
+        box-shadow: 0 0 .4em .3em #000, inset 0 0 .4em .3em #111;
+        pointer-events: auto;
+    }
+
+.box__user-profile {
+    font-size: 1rem;
+}
+
+.user-profile--adjusted {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box__user-info {
+    font-size: 1rem;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 1fr;
+    margin-bottom: 2em;
+}
+
+.user-info--adjusted {
+    width: fit-content;
+    min-width: 85%;
+}
+
+    .user-info__image-box {
+        place-self: center;
+        font-size: 1rem;
+        width: 6.2em;
+        height: 6.2em;
+        border-radius: 50%;
+        background-position: center;
+    }
+
+    .image-box--beginner {
+        box-shadow: 0 0 .2em .3em #cccc, 0 0 .4em .5em #2226;
+    }
+
+    .image-box--adventurer {
+        box-shadow: 0 0 .2em .3em hsla(111, 53%, 77%, 0.93), 0 0 .4em .5em #2226;
+    }
+
+    .image-box--explorer {
+        box-shadow: 0 0 .2em .35em hsla(177, 53%, 77%, 0.93), 0 0 .4em .5em #2226;
+    }
+
+    .image-box--guardian {
+        box-shadow: 0 0 .2em .35em hsla(267, 53%, 77%, 0.93), 0 0 .4em .5em #2226;
+    }
+
+    .image-box--archmaster {
+        box-shadow: 0 0 .2em .4em hsla(3, 53%, 77%, 0.93), 0 0 .4em .5em #2226;
+    }
+
+    .image-box--challenger {
+        box-shadow: 0 0 .2em .4em hsla(66, 53%, 77%, 0.93), 0 0 .4em .6em #2226;
+    }
+
+        .image-box__image {
+            font-size: 1rem;
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+        }
+
+    .user-info__data {
+        font-size: 1rem;
+    }
+
+    .data__text {
+        margin: 0;
+        padding-bottom: .1em;
+    }
+
+    .data__text--large {
+        font-size: 1.8rem;
+        font-weight: 650;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .data__text--medium {
+        font-size: 1.25rem;
+    }
+
+    .data__text--small {
+        font-size: 1rem;
+    }
+
+/*  SECOND, ACTION BUTTONS SECTION */
+
+.box__action-buttons {
+    font-size: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-left: .25em dashed #444;
+    gap: .5em;
+}
+
+.box__action-buttons--adjusted {
+    font-size: 1rem;
+    gap: .75em;
+}
+
+    .action-buttons__btn-item {
+        font-size: 1rem;
+    }
+
+        .btn-item__icon:hover {
+            cursor: pointer;
+        }
+
+        .btn-item__icon {
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+            .icon--btn {
+                font-size: 2.4rem;
+            }
+
+        .icon-info, .icon-logout, .icon-hide {
+            padding: .34rem;
+            border-radius: 50%;
+            color: #aaa;
+
+            transition-duration: 5s;
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            transition: all 1s ease;
+        }
+
+        .icon-hide {
+            box-shadow: inset -1rem -1rem .4rem -.4rem #666, .06rem .06rem .12rem .06rem hsla(111, 53%, 77%, 0.93);
+            color: hsla(111, 63%, 80%, 0.93);
+        }
+
+        .icon-info {
+            box-shadow: inset -1rem -1rem .4rem -.4rem #666, .06rem .06rem .12rem .06rem hsla(204, 53%, 77%, 0.93);
+            color: hsla(204, 63%, 80%, 0.93);
+        }
+
+        .icon-logout {
+            box-shadow: inset -1rem -1rem .4rem -.4rem #666, .06rem .06rem .12rem .06rem hsla(11, 53%, 77%, 0.93);
+            color: hsla(11, 63%, 80%, 0.93);
+        }
+
+        .icon-hide:hover {
+            box-shadow: inset 1rem 1rem .4rem -.4rem #555, -.06rem -.06rem .12rem .06rem hsla(111, 53%, 77%, 0.93);
+            color: hsla(111, 63%, 70%, 0.93);
+        }
+
+        .icon-info:hover {
+            box-shadow: inset 1rem 1rem .4rem -.4rem #555, -.06rem -.06rem .12rem .06rem hsla(204, 53%, 77%, 0.93);
+            color: hsla(204, 63%, 70%, 0.93);
+        }
+
+        .icon-logout:hover {
+            box-shadow: inset 1rem 1rem .4rem -.4rem #555, -.06rem -.06rem .18rem .09rem hsla(11, 53%, 77%, 0.93);
+            color: hsla(11, 63%, 70%, 0.93);
+        }
+
+        @keyframes go {
+            0% {
+                box-shadow: inset -1rem -1rem .4rem -.4rem #666, .06rem .06rem .12rem .06rem hsla(11, 53%, 77%, 0.93);
+                color: hsla(11, 63%, 80%, 0.93);
+            } 100% {             
+            box-shadow: inset 1rem 1rem .4rem -.4rem #555, -.06rem -.06rem .18rem .09rem hsla(11, 53%, 77%, 0.93);
+            color: hsla(11, 63%, 70%, 0.93);
+            }
+        }
+
+        .btn-item__text {
+            font-size: 1rem;
+            margin-top: .3rem;
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-weight: 650;
+        }
+
+/* LASTLY, AS AN INITIAL STATE, SET THE OPACITY TO 0 TO USER TAB CONTENT (WE WILL CHANGE IT BACK TO A FULL VALUE WITH ANIMATION) */
+.box__action-buttons, .box__user-profile, .user-tab {
+    opacity: 0;
+}

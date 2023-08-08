@@ -1,0 +1,110 @@
+#body { /* SELECTOR body IS NOT PURE (PURE SELECTORS MUST CONTAIN AT LEAST 1 CLASS OR ID) */
+    margin: 0;
+}
+
+.showcase-serie-box {
+    display: flex;
+    padding: 1em;
+    gap: 0.5em;
+}
+
+.bg-main {
+    background: #111;
+    background-image: linear-gradient(135deg, #000, #111, #111, #222, #111, #111, #000);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    filter: saturate(120%);
+    z-index: 200;
+}
+
+.seizure-flexbox {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: auto;
+    place-items: center;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    justify-content: space-between;
+    overflow: hidden;
+    color: #fff;
+    font-size: 1.3rem;
+    z-index: 100;
+    border-bottom: 0.1em groove rgba(34, 34, 34, 0.6);
+    transition: 0.6s;
+    box-shadow: 0 0 1em #000;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.return-back {
+    background: inherit;
+    border-radius: 50%;
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.top-bar .top-bar__title .title-name {
+    background: -webkit-linear-gradient(135deg, rgba(221, 221, 221, 0.8666666667), rgba(221, 221, 221, 0.8666666667));
+    filter: contrast(120%) saturate(120%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0.2rem 0.2rem 0.3rem rgba(221, 221, 221, 0.6);
+    font-size: 2.6rem;
+    font-weight: 650;
+    letter-spacing: 0.2rem;
+    text-align: center;
+}
+
+.top-bar .top-bar__follow, 
+.top-bar .top-bar__return {
+    font-size: 1rem;
+    margin: 1em 2em;
+}
+
+.top-bar .top-bar__follow .follow-me, 
+.top-bar .top-bar__return .return-back {
+    font-size: 2.8rem;
+}
+
+.top-bar .top-bar__follow .follow-me:hover,
+.top-bar .top-bar__return .return-back:hover {
+    cursor: pointer;
+}
+
+.top-bar__follow .follow-me .icon-user,
+.top-bar__follow .follow-me .icon-scroll,
+.top-bar__return .return-back .icon-home {
+    font-size: 3.6rem;
+    color: #ddd;
+    box-shadow: 0em -0.1em 0.8em #ddd, inset 0em 0em 0.8em #ddd;
+    border-radius: 50%;
+    padding: 0.2em;
+}
+
+.showcase-block {
+    margin-top: 3em;
+    width: 80%;
+    padding: 2em 0;
+    overflow-x: hidden;
+}
+
+/* Sticky navigation onScroll */
+
+.sticky::before {
+    content: "";
+    z-index: -5;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: saturate(50%);
+}

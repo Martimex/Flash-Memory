@@ -1,0 +1,15 @@
+.background_custom {
+    background-image: url('../resources/background.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+.game_custom {
+    box-sizing: border-box;
+}
+
+.board_custom  {
+    box-sizing: border-box;
+}

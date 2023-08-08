@@ -1,0 +1,53 @@
+.firstPlan_custom {
+    box-sizing: border-box; /* We can use second plan field styling the way that it fits a given level best */
+    overflow: hidden; /* In case of glowing dots overflowing the screen */
+}
+
+.glowing-dot {
+    z-index: -60;
+    position: absolute;
+    border-radius: 50%;
+    height: .1rem;
+    width: .1rem;
+}
+
+.glowing-dot::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;    
+}
+
+.glowing-0, .glowing-0::before {
+    box-shadow: 0 0 1.5rem rgba(134,255,0,1),
+    0 0 3rem rgba(134,255,0,1),
+    0 0 4.5rem rgba(134,255,0,1), 
+    0 0 6rem rgba(134,255,0,1),
+    0 0 0 .5rem rgba(134,255,0,.2);
+}
+
+.glowing-1, .glowing-1::before {
+    box-shadow: 0 0 1.5rem rgba(225,0,255,1),
+    0 0 3rem rgba(225,0,255,1),
+    0 0 4.5rem rgba(225,0,255,1),
+    0 0 6rem rgba(225,0,255,1),
+    0 0 0 .5rem rgba(225,0,255,.2);
+}
+
+.glowing-2, .glowing-2::before {
+    box-shadow: 0 0 1.5rem rgba(255,238,0,1),
+    0 0 3rem rgba(255,238,0,1),
+    0 0 4.5rem rgba(255,238,0,1),
+    0 0 6rem rgba(255,238,0,1),
+    0 0 0 .5rem rgba(255,238,0,.2);
+}
+
+.glowing-3, .glowing-3::before {
+    box-shadow: 0 0 1.5rem rgba(0,132,255,1),
+    0 0 3rem rgba(0,132,255,1),
+    0 0 4.5rem rgba(0,132,255,1),
+    0 0 6rem rgba(0,132,255,1),
+    0 0 0 .5rem rgba(0,132,255,.2);
+}

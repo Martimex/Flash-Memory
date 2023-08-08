@@ -1,0 +1,38 @@
+#root { /* SELECTOR :root IS NOT PURE (PURE SELECTORS MUST CONTAIN AT LEAST 1 CLASS OR ID) */ 
+    --color-hue: 70%;
+    --color-lightness: 44%;
+    --color-opacity_main: .58;
+    --color-opacity_sec: .68;
+
+    --color_easy_main: hsla(123, var(--color-hue), var(--color-lightness), var(--color-opacity_main) );
+    --color_easy_sec:  hsla(144, var(--color-hue), var(--color-lightness), var(--color-opacity_sec) );
+
+    --color_medium_main: hsla(58, var(--color-hue), var(--color-lightness), var(--color-opacity_main) );
+    --color_medium_sec: hsla(58, var(--color-hue), var(--color-lightness), var(--color-opacity_sec) );
+
+    --color_hard_main: hsla(8, var(--color-hue), var(--color-lightness), var(--color-opacity_main) );
+    --color_hard_sec: hsla(345, var(--color-hue), var(--color-lightness), var(--color-opacity_sec) );
+
+    --color_insane_main: hsla(182, var(--color-hue), var(--color-lightness), var(--color-opacity_main) );
+    --color_insane_sec: hsla(221, var(--color-hue), var(--color-lightness), var(--color-opacity_sec) );
+
+    --color_extreme_main: hsla(307, var(--color-hue), var(--color-lightness), var(--color-opacity_main) );
+    --color_extreme_sec: hsla(262, var(--color-hue), var(--color-lightness), var(--color-opacity_sec) );
+
+    --color_legend_main: hsla(19, var(--color-hue), var(--color-lightness), var(--color-opacity_main) );
+    --color_legend_sec: hsla(38, var(--color-hue), var(--color-lightness), var(--color-opacity_sec) );
+
+    --border-color_easy: var(--color_easy_sec);
+    --border-color_medium: var(--color_medium_sec);
+    --border-color_hard: var(--color_hard_sec);
+    --border-color_insane: var(--color_insane_sec);
+    --border-color_extreme: var(--color_extreme_sec);
+    --border-color_legend: var(--color_legend_sec);
+
+    --playIcon-color_easy: var(--color_easy_sec);
+    --playIcon-color_medium: var(--color_medium_sec);
+    --playIcon-color_hard: var(--color_hard_sec);
+    --playIcon-color_insane: var(--color_insane_sec);
+    --playIcon-color_extreme: var(--color_extreme_sec);
+    --playIcon-color_legend: var(--color_legend_sec);
+}

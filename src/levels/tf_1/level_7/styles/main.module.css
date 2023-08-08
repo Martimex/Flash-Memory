@@ -1,0 +1,85 @@
+.aContainer_custom {
+    font-style: normal;
+}
+
+.fa-icon_custom {
+    font-size: 1.2rem;
+}
+
+.tile_custom { 
+    border-radius: 50%;
+    border: .8rem solid rgba(36, 141, 5, 0);
+    box-shadow: inset 0 0 .1rem .2rem #222;
+    background-image: radial-gradient( hsl(52, 80%, 60%) 20%, hsl(29, 80%, 0%) 45%, hsl(282, 80%, 60%));
+
+}
+
+.tile-back_custom {
+    border-radius: 40%;
+    background-image: radial-gradient( hsl(29, 80%, 0%) 35%,  #555);
+    box-shadow: inset 0 0 .25rem .25rem #000;
+    filter: brightness(130%) saturate(120%);
+}
+
+
+.gd-level_custom::before, .gd-turns_custom::before, .gd-time_custom::before, .gd-score_custom::before,
+.gd-level_custom::after, .gd-turns_custom::after, .gd-time_custom::after, .gd-score_custom::after
+{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1vh;
+}
+
+.gd-level_custom {
+    color: hsl(52, 66%, 62%);
+    text-shadow: .1rem .1rem .25rem #111;
+    font-weight: 750;
+}
+
+.gd-turns_custom, .gd-time_custom {
+    color: hsl(52, 66%, 52%);
+    text-shadow: .1rem .1rem .25rem #111;
+    font-weight: 750;
+}
+
+.gd-score_custom {
+    color: hsl(52, 66%, 62%);
+    text-shadow: .1rem .1rem .25rem #111;
+    font-weight: 750;
+}
+
+
+/* Animation container stuff */
+
+.dimmed-screen {
+    width: 100%;
+    min-height: 100vh;
+    z-index: 350; /* can be any value from 301 to 399 */
+    position: absolute; top: 0vh; left: 0vw;
+    background: #1119;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message-box {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.message {
+    font-size: 1.85rem;
+    margin: 1.1em auto;
+    background: linear-gradient(to right,  #333, #222);
+    text-shadow: .08em .08em hsl(52, 66%, 52%), .11em .11em yellow;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: .12em;
+    font-weight: 600;
+    opacity: 0; /* Will be animated back to 1 */
+}

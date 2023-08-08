@@ -1,0 +1,13 @@
+.background_custom {
+    background-image: url('../resources/background.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.game_custom {
+    box-sizing: border-box;
+}
+
+.board_custom  {
+    box-sizing: border-box;
+}

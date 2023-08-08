@@ -1,0 +1,74 @@
+.firstPlan_custom {
+    box-sizing: border-box;
+}
+
+.powerball {
+    border-radius: 50%;
+    position: absolute;
+    padding: 2em;
+    background-image: radial-gradient(hsl(222, 40%, 50%), hsl(242, 40%, 50%), hsl(262, 40%, 50%), #0000 75%);
+    border: 0.15rem dotted hsl(144, 40%, 40%);
+    filter: saturate(75%);
+    opacity: 0;
+}
+
+.powerball-1, .powerball-4 {
+    font-size: 1.3rem;
+}
+
+.powerball-2, .powerball-5 {
+    font-size: 1.8rem;
+}
+
+.powerball-3, .powerball-6 {
+    font-size: 1.5rem;
+}
+
+/* CREATION ORDER :  D -> D1 -> D2 -> D -> D1 -> D2*/
+.powerball-1 {
+    left: 0%;
+    top: 0%;
+}
+
+.powerball-2 {
+    left: 12%;
+    top: 25%;
+}
+
+.powerball-3 {
+    left: 24%;
+    top: 0%;
+}
+
+.powerball-4 {
+    right: 0%;
+    top: 0%;
+}
+
+.powerball-5 {
+    right: 12%;
+    top: 25%;
+}
+
+.powerball-6 {
+    right: 24%;
+    top: 0%;
+}
+
+.lantern {
+    position: absolute;
+    bottom: 10%;
+    padding: 5.4rem;
+    border: 0.3rem dotted hsl(222, 40%, 50%);
+    box-shadow: inset 0 0 2rem hsl(222, 40%, 50%), inset 1rem 1rem 4rem hsl(252, 50%, 50%);
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.lantern-1 {
+    left: 8%;
+}
+
+.lantern-2 {
+    right: 8%;
+}

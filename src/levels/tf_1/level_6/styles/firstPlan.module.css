@@ -1,0 +1,57 @@
+.tornado {
+    position: absolute;
+    display: grid;
+    width: 15vh;
+    height: 15vh;
+    grid-template-columns: repeat(3, 5vh);
+    grid-template-rows: repeat(3, 5vh);
+    row-gap: 0.3rem;
+    -moz-column-gap: 0.3rem;
+    column-gap: 0.3rem;
+    opacity: 0;
+}
+
+.tornado-elem {
+    border-radius: 20%;
+    background: indianred;
+}
+
+.tornado-1 {
+    top: calc(35% - 7.5vh);
+    left: calc(15% - 7.5vh);
+}
+
+.tornado-1 .tornado-elem {
+    background-image: linear-gradient(135deg, hsl(54, 50%, 60%), hsl(9, 50%, 60%));
+    box-shadow: inset .3rem .3rem .2rem hsl(9, 70%, 40%);
+}
+
+.tornado-2 {
+    top: calc(65% + 7.5vh);
+    left: calc(15% - 7.5vh);
+}
+
+.tornado-2 .tornado-elem {
+    background-image: linear-gradient(135deg, hsl(88, 50%, 60%), hsl(344, 50%, 60%));
+    box-shadow: inset .3rem .3rem .2rem hsl(344, 70%, 40%);
+}
+
+.tornado-3 {
+    top: calc(35% - 7.5vh);
+    left: calc(85% - 7.5vh);
+}
+
+.tornado-3 .tornado-elem {
+    background-image: linear-gradient(135deg, hsl(310, 50%, 60%), hsl(240, 50%, 60%));
+    box-shadow: .3rem .3rem .2rem hsl(240, 50%, 60%);
+}
+
+.tornado-4 {
+    top: calc(65% + 7.5vh);
+    left: calc(85% - 7.5vh);
+}
+
+.tornado-4 .tornado-elem {
+    background-image: linear-gradient(135deg, hsl(211, 50%, 60%), hsl(299, 50%, 60%));
+    box-shadow: .3rem .3rem .2rem hsl(299, 50%, 60%);
+}

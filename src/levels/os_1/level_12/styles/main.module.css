@@ -1,0 +1,30 @@
+.aContainer_custom {
+    font-style: normal;
+}
+
+.fa-icon_custom {
+    font-size: 1.8rem;
+    color: inherit;
+    border: .1rem solid inherit;
+    color: hsla(122, 100%, 100%, .35);
+}
+
+.tile_custom { 
+    border: 0rem solid #fff;
+    outline: 0rem solid transparent;
+    border-style: dotted;
+}
+
+.tile-back_custom {
+    backdrop-filter: blur(5px) grayscale(80%) saturate(125%);
+}
+
+.gd-level_custom, .gd-turns_custom, .gd-time_custom, .gd-score_custom {
+    background: -webkit-linear-gradient(55deg, yellow, lime);
+    filter: contrast(70%) saturate(120%); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    text-shadow: 0 0 .5rem greenyellow;
+}

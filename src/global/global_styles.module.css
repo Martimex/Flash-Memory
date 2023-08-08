@@ -1,0 +1,119 @@
+/*WORK AROUND THIS, AND REMOVE THE # TAG THE WAY THE "NOT PURE" ERROR TYPE WILL NOT THROW*/
+#body {
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    background-color: hsl(0, 0%, 0%);
+}
+
+#button:hover, .tile:hover {
+    cursor: pointer;
+}
+
+.all {
+    background-color: #111;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    width: 100%;
+    min-height: 100%;
+    z-index: 0;
+}
+
+.game {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 7.92rem);
+}
+
+.board {
+    display: grid;
+}
+
+.animationContainer, .firstPlanContainer, .secondPlanContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    width: 100%;
+    pointer-events: none;
+}
+
+.animationContainer {
+    z-index: 400;
+}
+
+.details-item, .board {
+    z-index: 300;
+}
+
+.firstPlanContainer {
+    z-index: 200;
+}
+
+.secondPlanContainer {
+    z-index: 100;
+}
+
+.tile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+}
+
+.tile-front {
+    backface-visibility: hidden;
+}
+
+.tile-back {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.svg-inline--fa {
+    overflow: hidden !important; /* Not working, because FA gives an inline styling for overflow: visible */
+}
+
+/* GAME DETAILS - UPPER LABEL AT THE TOP OF EVERY LEVEL */
+.game-info {
+    box-sizing: border-box;
+}
+
+.game-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem 0 2.4rem 0;
+    font-size: 1.8rem;
+}
+
+.details-item {
+    letter-spacing: 0.1rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.svg-inline, #path, #svg {
+    pointer-events: none;
+    overflow: hidden;
+}
+
+/* Win level animation elems */
+
+.win-el {
+    position: absolute;
+    height: 100%;
+    top: 0%;
+    background: hsl(2, 0%, 0%);
+}

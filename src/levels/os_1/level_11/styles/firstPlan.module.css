@@ -1,0 +1,65 @@
+.firstPlan_custom {
+    box-sizing: border-box; /* We can use second plan field styling the way that it fits a given level best */
+}
+
+.wBox {
+    font-size: 1rem;
+    position: absolute; 
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    min-height: 33%;
+    margin: 0;
+    padding: 2em 0;
+    display: block;
+    background-image: url('../resources/background.svg');
+    border-radius: 10%;
+    border-image: url('../resources/background.svg');
+    border: .2em solid #222;
+    box-shadow: -.1em .15em .5em .65em rgba(0,0,0,0.25);
+    -webkit-box-shadow: -.1em .15em .5em .65em rgba(0,0,0,0.25);
+    -moz-box-shadow: -.1em .15em .5em .65em rgba(0,0,0,0.25);
+}
+
+.wBox-1 {
+    bottom: 0%; left: 0%;
+    filter: hue-rotate(10deg) saturate(120%) brightness(90%);
+}
+
+.wBox-2 {
+    bottom: 0%; right: 0%;
+    filter: hue-rotate(20deg) saturate(120%) brightness(75%);
+}
+
+.hText {
+    font-size: 1rem;
+    margin: 2em auto;
+    border-radius: 60%;
+    margin-top: 1em;
+    color: #222;
+    letter-spacing: .2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hText_letter {
+    font-size: 2em;
+    color: #0000;
+    -webkit-text-stroke: .05em darkgreen;
+    font-weight: 600;
+}
+
+.svgContainer{
+    margin: .6rem;
+    background-image: url('../resources/background.svg');
+    border-radius: 12%;
+}
+
+.svgContainer svg {
+    width: 6rem;
+    height: 9rem;
+    z-index: 10;
+    font-size: 5rem;
+}

@@ -1,0 +1,95 @@
+.aContainer_custom {
+    font-style: normal;
+}
+
+.fa-icon_custom {
+    color: inherit;
+    color: hsl(166, 50%, 60%);
+    font-size: 1.8rem;
+}
+
+
+.tile_custom {
+    border: .3rem solid none;
+    margin: -.1rem;
+    border-radius: 15% 10% 15% 10%;
+    outline: 0px solid transparent;
+    border-style: ridge;
+    opacity: 0; /* Will be animated back to 1 */
+}
+
+.tile-brown {
+    border-color: hsla(23, 40%, 50%, .5);
+    background-image: radial-gradient(/* hsl(166, 0%, 0%), */ hsl(23, 40%, 50%), hsl(62, 0%, 0%));
+    box-shadow: 0 0 .15rem .2rem hsl(23, 30%, 20%);
+}
+
+.tile-brown .tile-back_custom {
+    background-image: radial-gradient(hsl(166, 0%, 0%), hsl(23, 40%, 40%), hsl(62, 0%, 0%));
+}
+
+.tile-brown .fa-icon_custom {
+    color: hsl(23, 50%, 60%);
+}
+
+.tile-silver {
+    border-color: hsla(166, 40%, 50%, .5);
+    background-image: radial-gradient(/* hsl(23, 0%, 0%), */ hsl(166, 40%, 50%), hsl(62, 0%, 0%));
+    box-shadow: 0 0 .15rem .2rem hsl(166, 30%,20%);
+}
+
+.tile-silver  .tile-back_custom {
+    background-image: radial-gradient(hsl(23, 0%, 0%), hsl(166, 40%, 40%), hsl(62, 0%, 0%));
+}
+
+.tile-silver .fa-icon_custom {
+    color: hsl(166, 50%, 60%);
+}
+
+.tile-gold {
+    border-color: hsla(62, 40%, 50%, .5);
+    background-image: radial-gradient(/* hsl(166, 0%, 0%), */ hsl(62, 40%, 50%), hsl(23, 0%, 0%));
+    box-shadow: 0 0 .15rem .2rem hsl(62, 30%, 20%);
+}
+
+.tile-gold  .tile-back_custom {
+    background-image: radial-gradient(hsl(166, 0%, 0%), hsl(62, 40%, 40%), hsl(23, 0%, 0%));
+}
+
+.tile-gold .fa-icon_custom {
+    color: hsl(62, 50%, 60%);
+}
+
+.tile-back_custom { 
+    border-radius: 20%;
+}
+
+.gd-level_custom, .gd-turns_custom, .gd-time_custom, .gd-score_custom {
+    font-weight: 800;
+}
+
+.gd-level_custom {
+    color: hsl(23, 40%, 50%)
+}
+
+.gd-turns_custom, .gd-time_custom {
+    color: hsl(166, 40%, 50%);
+}
+
+.gd-score_custom { 
+    color: hsl(62, 40%, 50%)
+}
+
+/* Animations lol */
+
+.turn-decrease-box {
+    position: absolute;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: hsl(350, 100%, 88%);
+    text-shadow: 0 0 .75rem hsl(351, 100%, 66%);
+    -webkit-text-stroke: .1rem hsl(351, 100%, 76%);
+    filter: invert(80%) saturate(120%) brightness(120%);
+    width: 1em;
+    pointer-events: none;
+}

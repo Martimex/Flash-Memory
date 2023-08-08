@@ -1,0 +1,88 @@
+.aContainer_custom {
+    font-style: normal;
+}
+
+.fa-icon_custom {
+    font-size: 1.8rem;
+    border: .1em solid inherit;
+    color: hsl(122, 35%, 30%);
+}
+
+.tile_custom {
+    border-start-end-radius: 33%;
+    border-start-start-radius: 33%;
+    border: .15rem solid hsl(122, 20%, 30%);
+    border-style: ridge;
+    background-color: inherit;
+    background: inherit;
+    background-image: url('../resources/background.svg');
+    background-size: contain;
+}
+
+.tile-back_custom { 
+    border-radius: 20%;
+}
+
+.gd-level_custom, .gd-turns_custom, .gd-time_custom, .gd-score_custom {
+    font-weight: 550;
+    background: -webkit-linear-gradient(135deg, hsla(132, 73%, 49%, 0.58), hsla(99, 64%, 49%, 0.68));
+    filter: contrast(120%) saturate(120%); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: .12rem .12rem .4rem hsla(155, 73%, 49%, 0.68);
+}
+
+.bounty-q {
+    font-style: normal;
+}
+
+/* Animation container stuff */
+
+.initial-screen {
+    font-size: 1rem;
+    position: absolute; top: 0%; left: 0%;
+    width: 100%;
+    min-height: 100vh;
+    opacity: 1;
+    background: linear-gradient(135deg, hsl(122, 30%, 25%), #0002, hsl(122, 30%, 25%));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(3px);
+    opacity: 0; /* Will be animated back to 1 */
+}
+
+.initial-textbox {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 66%;
+    text-align: center;
+}
+
+.initial-heading {
+    display: block;
+    font-size: 3rem;
+    margin-bottom: 1em;
+    font-weight: 600;
+    color: hsl(122, 15%, 30%);
+    -webkit-text-stroke: .03em hsla(155, 53%, 49%, 0.68);
+    text-shadow: .05em .05em hsl(122, 15%, 30%);
+    letter-spacing: .12em;
+    opacity: 0; /* Will be animated back to 1 */
+}
+
+.initial-text {
+    display: block;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: hsl(122, 15%, 50%);
+    -webkit-text-stroke: .02em #111;
+    text-shadow: .075em .01em #222;
+    letter-spacing: .1em;
+    line-height: 150%;
+    opacity: 0; /* Will be animated back to 1 */
+}
