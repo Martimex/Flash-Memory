@@ -22,7 +22,6 @@ function PlayerStats(props) {
         if(isAnimationRunning) { return; }
         isAnimationRunning = true;
         const allProgressBars = document.querySelectorAll(`.${barStyles['stats-item']}`);
-        console.log(newPageNo, ' and progress bars: ', allProgressBars);
         await anime({
             targets: allProgressBars,
             translateY: {value: '20%', delay: anime.stagger(90), duration: 150, easing: 'linear'},

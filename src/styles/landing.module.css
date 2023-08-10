@@ -388,14 +388,10 @@
 .fancy-icon {
     opacity: .5;
     font-size: 4rem;
-    padding-top: .25em;
-    padding-bottom: .25em;
-    padding-left: .5em;
-    padding-right: .5em;
+    padding: .25em .5em;
     color: hsla(0, 0%, 0%, 0.5);
     border-radius: 777px;
     filter: hue-rotate(60deg) brightness(120%);
-    padding: initial .3em;
     transition: 1.25s;
     user-select: none;
     cursor: default;
