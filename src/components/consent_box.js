@@ -7,7 +7,7 @@ function ConsentBox(props) {
         <Fragment>
             <label htmlFor="consent" className={styles["consent_container"]}>
                 <input name="consent" title="consent" placeholder="" id={styles["consent_input"]} type="checkbox" onClick={() => props.setConsentAccepted(!props.isConsentAccepted)} />
-                I have read and accept the <a className={styles['redirect-link']} target="_blank" href='https://github.com'> Terms and Conditions </a>
+                I have read and accept the <a className={styles['redirect-link']} target="_blank" href='https://github.com/Martimex/Flash-Memory/blob/main/TermsOfService.md'> Terms of Service </a>
             </label>
         </Fragment>
     )

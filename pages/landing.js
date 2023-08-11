@@ -184,7 +184,7 @@ function Landing(props) {
                     <div className={styles['content-action']}>
                         <div className={styles['from-author']}>
                             <div className={styles['from-author-section']}> {status === 'authenticated'?  <span> Welcome back again, {data.user.name} </span> : <span> The hardest memory game you will ever play... </span>} </div>
-                            <div className={styles['from-author-section']}> {status === 'authenticated'?  <span> Check out the recent updates <a className={styles['redirect-link']} target="_blank" href="https://github.com/Martimex/memory-game"> here </a> </span> : <ConsentBox setConsentAccepted={setConsentAccepted} isConsentAccepted={isConsentAccepted} />} </div>
+                            <div className={styles['from-author-section']}> {status === 'authenticated'?  <span> Check out the recent updates <a className={styles['redirect-link']} target="_blank" href="https://github.com/Martimex/Flash-Memory"> here </a> </span> : <ConsentBox setConsentAccepted={setConsentAccepted} isConsentAccepted={isConsentAccepted} />} </div>
                         </div>
                         <button className={`${styles['start']} ${checkConsentStauts()? styles['start-active'] : styles['start-inactive']} `} onClick={() => {checkConsentStauts() && checkUserSession()}}> Play </button>
                     </div>
