@@ -79,11 +79,11 @@ function Landing(props) {
     useEffect(() => {
         // This useEffect happens only once - that is mandatory here !s
         getRandomIcons(icon_Sets[`fas`], usedIcons, randomizedIcons);
-        allIcons = Array.from(new Array(16)).map((elem, index) => {
+        allIcons = Array.from(new Array(12)).map((elem, index) => {
             return ( 
                 <div key={'moverow_' + index.toString()} className={styles['move-box__row']}>
                     <div className={styles['move-box__trigger']}>
-                        {Array.from(new Array(20)).map((el, ind) => {
+                        {Array.from(new Array(12)).map((el, ind) => {
                             return (
                                 <FontAwesomeIcon  key={'move_' + ind.toString()} icon={randomizedIcons[Math.floor(Math.random() * randomizedIcons.length)]} className={`${styles_preview["icon-user"]} ${styles["fancy-icon"]} ${styles[`fancy-color-${getBaseColor()}`]}`} />
                             )
