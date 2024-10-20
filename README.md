@@ -1,6 +1,16 @@
 # Flash Memo Game
 
-Test your memorizing skills with this crazy game. Awake your hidden memorizing potential by facing a series of challenging levels. Only the bravest Adventurers would make it through. Get rid of annoying tiles, find the right solutions and complete the epic Adventure through 20 levels. Would you dare to face them all?
+Test your memorizing skills with this crazy game. Awake your hidden memorizing potential by facing a series of challenging levels. Only the bravest Adventurers would make it through. Get rid of annoying tiles, find the right solutions and complete the epic Adventure through 12 levels. Would you dare to face them all?
+
+<br> <br>
+
+**NOTE#1: <br> <br> In its' current state, the game is not available for mobile devices yet! If possible, please try to avoid playing on mobile devices / small screens, as the app is not responsive on those.**
+
+<br>
+
+**NOTE#2: <br> <br> This README file will be updated with more accurate info, including the grand 2023 update. Stay tuned for that!**
+
+<br> <br> <br>
 
 ## Story time
 
@@ -12,6 +22,12 @@ During this time I have learnt a lot not only about React framework, but UX desi
 
 The project took approximately 400 - 450 hours to its initial release (including time to make those exhausing SVGs tho!). It might seem like a lot of the time for not that much complicated project, but I have spent quite a lot of the time on testing this game in order to be certain that it works OK.
 
+<br>
+
+To be continued soon...
+
+<br> <br>
+
 ## Prerequisites
 
 No special requirements needed. However, I would highly recommend to play this game using mouse (instead of touchpads in laptops) for better in-game experience.\
@@ -20,7 +36,7 @@ IMPORTANT NOTE: This game is not available for mobile devices yet! Please wait p
 
 ## Want to play the game ?
 
-That's great! Here is the link: https://flashmemo.herokuapp.com/ \
+That's great! Here is the link: [https://flash-memory.vercel.app/](https://flash-memory.vercel.app/) \
 \
 Note: It might take a couple of seconds to load, please wait patiently.
 
@@ -33,7 +49,11 @@ Here is the brief list of tools used to create this App:
 - Font Awesome [for all that fancy icons in the game]; 
 - Anime.js [animation library - 99% of animations were made thanks to it]; 
 - Inkscape [tool for making SVG's];
-- Heroku [hosting provider];
+- Vercel [hosting provider];
+- Prisma [ORM]
+- Supabase
+- PostgreSQL
+- Typescript
 
 ## Future improvements
 
